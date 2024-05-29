@@ -193,6 +193,15 @@
 
 .post-list-heading {
   @include relative-font-size(1.75);
+
+  @media screen and (min-width: $on-large) {
+    @include relative-font-size(2);
+  }
+
+  font-variant: small-caps;
+  font-weight: bold;
+  letter-spacing: 1px;
+
 }
 
 .post-list {
