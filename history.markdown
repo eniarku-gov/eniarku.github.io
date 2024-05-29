@@ -1,0 +1,61 @@
+---
+layout: page
+title: History
+permalink: /history/
+---
+
+Eniarku was originally established as a semi-presidential republic on 29 May 2009 by now-Grand Duke Alexander and his close friends. Drawing a great deal of inspiration from the Enlightenment-based ideals of the American and French Revolutions (especially the latter's foundational Declaration of the Rights of Man and of the Citizen), the founding government sent its formal declaration of independence to local and state American government officials and quickly ratified laws designed to safeguard the fundamental rights of its citizens and establish the three traditional branches of government under a separation of powers system.
+
+<!--
+<figure>
+    <img src="{{site.url}}/imgs/history_pg/EniarkuFlag.jpg" alt="Republic flag"/>
+    <figcaption>*Flag of the original republic*</figcaption>
+</figure>
+
+
+![republic_flag](/imgs/history_pg/EniarkuFlag.jpg){: width="250" }{: style="float: left; padding-right:25px" }
+*Flag of the original republic*
+-->
+
+While initially created as a small-scale social experiment, the nation quickly joined the MicroWiki community and established diplomatic relations with the Empire of Austenasia and the Republic of Molossia, two nations which heavily influenced the early republic. Near the end of 2009, the nation experienced a significant population spike resulting in instability within the government; this conflict ultimately ended in the president and prime minister jointly dismissing many officials and becoming Eniarku's de facto diarchs for nearly three months, after which the population began to plateau and turmoil subsided.
+
+
+## Red Reformation and communist rule
+
+With the founders now holding near-absolute power over the state, they enacted a series of sweeping policy changes that have become known as the Red Reformation. On 15 February 2010, the newly-created Eniarkian Worker's Party (EWP) established the Democratic People's Republic of Eniarku as a single-party communist state and installed the former president as Supreme Executive Commissioner, closely modeling its reconfiguration of the country's domestic institutions off of the now-defunct Democratic People's Republic of Erusia.
+
+Despite assurances by the central government that political, social, and economic rights would remain relatively unchanged under communist rule, the governing EWP ruthlessly disbanded all opposing parties in the National People's Congress and quickly became the most powerful group in the government. While the EWP's ideology was effectively a "melting pot" of ideas from different forms of socialism and communism from around the world, it was similar to many other ruling parties in single-party states insofar as it maintained a strict organizational hierarchy, the lines between party and state institutions were blurred, and party officials in government actively worked to stifle opposition activities. To be sure, the National People's Congress (which, in turn, was comprised exclusively of EWP Presidium officials) frequently authorized the National Executive Committee, Central Military Commission, and Central Discipline Commission to carry out widespread political repression campaigns with the goal of strengthening the grip of the central government and eliminating political enemies. 
+
+
+## North American unification
+
+Shortly following the exposure of the Lethler Experiment and subsequent dissolution of Erusia in July 2010, the government was contacted by the Empire of New Europe and Ohio Empire, the latter of which had annexed itself to New Europe. After negotiations between EWP officials and Emperor Wilhelm I, the government agreed to a limited degree of New European suzerainty, an alliance that came to become known as the Movement for Tradition. After early attempts at reestablishing the North American sector failed, Wilhelm proposed full unification between the three states, at which point they would revisit their attempts to rejuvenate micronationalism on the continent. After nearly a month of negotiations, the nations jointly established the North American Confederation, which at the time of its inception was the largest North American micronation by claimed territory.
+
+While the new confederation's early months were relatively stable, its politics were quickly beleaguered by residual internal dilemmas and reservations of each member state. Plans for a general election failed due to lack of activity, territorial disputes with young neighboring nations persisted, and ideological disputes between both government officials and foreign diplomats were frequent. Recurring conflicts between the emperor and prime minister over political power and a proposed migration to the Micras sector were exacerbated by the persistent lack of a codified constitution, and following a failed vote in the provisional Congress to approve the move to Micras, Emperor William abdicated the throne, and the government announced the confederation's official dissolution and restoration of full member state independence on 28 April 2011.
+
+
+## White Reformation and power sharing
+
+After a brief reconstruction period ending on 18 May 2011, the Empire of Eniarku was declared in what has come to be known as the White Reformation, a term commonly used among royalists in an attempt to distance the new state from the failed Erusia, the fall of which led to reforms in many communist micronations of the era. The imperial government's structure was unique in that, at its inception, both the emperor (now-Grand Duke Alexander) and the legislature submitted to a power-sharing agreement that was designed to slowly transfer political power from the near-absolutist monarchy to the legislature and ministry as the state grew more stable.
+
+This period of relative stability later became known as the Interconfederale, and was characterized by sincere cooperation between the imperial government and monarchy on foreign affairs issues. Together with the revived Empire of New Europe and Valnorgrad, Eniarku worked to transform the previously stratocratic Triune Alliance into a partnership grounded in principles of general cooperation and assistance. The government also developed the nation's first-ever Foreign Diplomatic Policy, a document designed to codify the strict standards for nations seeking to engage diplomatically with Eniarku, as well as consolidated the outdated and over-complicated military chain of command.
+
+The imperial government also began ambitiously expanding its territory in the summer of 2011, claiming the entirety of the U.S. states of Indiana and Kentucky as incorporated territories. The empire also annexed the state of Ohio following confirmation of the Republic of Ohio's inactivity via official diplomatic channels, including the Pymatuning Lake Islands (a small group of islands located in a reservoir on the Pennsylvania-Ohio border), causing a brief territorial dispute with the newly-established government of Westsylvania. After several days of diplomatic negotiations, the Eniarkian and Westsylvanian governments agreed to the creation of the Joint Territory of the Pymatuning Lake Islands, which provided for both the expansion of the Eniarkian sphere of influence and de facto Westsylvanian control of the territory. 
+
+
+## Post-*Intercofnederale* restructuring
+
+Government activity slowed after several more months under the monarchy, and by late summer 2011, legislators announced a leave of absence from the Community as they yet again reworked the country's internal structure. This hiatus came to an end on 24 October 2011, when former imperial ministers and legislators announced the formation of the Eniarkian Confederation, a federal parliamentary democratic republic. Under the confederal system, the cantonal structure still in use today was established, Eniarku partially reestablished communications with several North American micronations (primarily the Empire of New Europe), and the now-defunct Supreme Court made several precedent-settings decisions.
+
+In mid-2012, however, the confederation began experiencing particularly sustained inactivity among its leaders, including its original founders. Most analysts agree that despite the notable resurgence of the post-Interconfederale era, the former federal government ceased meaningful activity no later than February 2013. 
+
+
+## Return to monarchy and contemporary era
+
+The inactivity of the confederation lasted for several years, during which a few members of the government met occasionally to discuss the reestablishment of the state. As many of the original founders had moved away from micronationalism, the remaining officials frequently found themselves debating government structures that would provide for simplified governance and consolidated political power while also staying true to the foundational democratic principles of the early republic. A natural option was transforming the remnants of the federal government into a semi-constitutional parliamentary monarchy with the former federal president and now-Grand Duke Alexander returning to the Eniarkian throne as king, and the Kingdom of Eniarku was declared on 5 August 2015 as the official successor state of the confederation.
+
+The reestablishment of Eniarku ushered in a period of power consolidation on the part of the monarchy. While the now-defunct Parliament was the de jure legislative body with the authority to create policy, the uncodified nature of the kingdom's constitution allowed the king to exercise vast political power through the Council of State, which served as both a royal privy council and executive cabinet with the de facto ability to legislate through regulation and decree. Over time, many of Parliament’s functions were taken over by the Council of State, in turn providing the king with more unilateral lawmaking power.
+
+Although the government had released many of its distant territorial claims by early 2017 in order to funnel more resources to immediately controllable realms, the Council of State became increasingly interested in the notion of claiming that the kingdom was the legitimate successor state of the newly-revived North American Confederation and that the former emperor’s return to the throne was unlawful. Upon hearing of these plans, the king (who was also the former prime minister of the confederation at the time of its dissolution) voiced his disapproval of the Council's plan, arguing that any attempt to claim a foreign throne would inevitably lead to conflict. The expansionist councillors were undeterred, however, threatening the king with forced abdication using an obscure legal loophole if he failed to comply, a series of events that ultimately resulted in the Eniarkian government claiming the throne and territory of the confederation on 15 February 2017. Within days, however, the king had managed to dismiss the Council of State and withdraw his coerced claims, moves met with gratitude by confederation officials and that helped to restore diplomatic stability in the North American sector.
+
+Between mid-2017 and early 2018, the kingdom’s activity once again became intermittent, with few decrees issued by the king or Council of State and limited engagement among the citizenry. The onset of the COVID-19 pandemic in early 2020 provided increased opportunities for a handful of remaining interested citizens and government officials to reengage with exploring new reforms designed to make the state more sustainable and less susceptible to inactivity issues, particularly through collaborative development of a first-of-its-kind codified constitution. In March 2024, after several years of on-and-off planning, drafting officials discovered that the Karno-Ruthenian Empire and its monarch had claimed the Eniarkian throne and its titles on 15 January 2021. In response, the former king and constitutional drafters successfully ratified the new constitution declaring the Grand Duchy of Eniarku as the sole legal successor state of the kingdom on 29 May 2024, the fifteenth anniversary of the country's original establishment, and the new government worked swiftly with Karno-Ruthenian officials to reinstate Grand Duke Alexander as the legitimate monarch.
