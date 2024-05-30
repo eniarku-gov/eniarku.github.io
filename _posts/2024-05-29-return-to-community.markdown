@@ -20,4 +20,6 @@ On the foreign affairs front, the Government is pleased to announce the renewal 
 
 As Eniarku continues to reintegrate itself into the micronational space, the Government welcomes any requests to engage in (or reopen) diplomatic ties, which may be addressed to the official email: **[gov.eniarku@gmail.com][gov-email]**.
 
+*Please note that this website will continue to be updated frequently, as will Eniarku-related pages on MicroWiki.*
+
 [gov-email]: mailto:gov.eniarku@gmail.com
