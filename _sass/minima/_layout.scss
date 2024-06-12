@@ -355,3 +355,59 @@
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
 }
+
+
+
+
+/**
+  * Accordion-style <details> elements
+  * Useful links:
+  *   https://www.sitepoint.com/style-html-details-element/
+  *   https://codepen.io/web-dot-dev/pen/PodYGBz
+  */
+  @layer setupPage;
+
+details {
+  border: 1px solid;
+  padding: 0 1rem;
+  background: white;
+}
+details + details {
+  border-top: none;
+}
+details[open] {
+    padding-bottom: 1em;
+}  
+summary {
+  padding: 1rem 2em 1rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* cascade layer: page setup. Doesn't impact the accordion */
+@layer setupPage {
+  
+:root {
+  font-size: 112.5%;
+  line-height: 1.5;
+}
+body {
+  background: #a4bacc99;
+  color: #226daa;
+  font-family: Raleway, sans-serif;
+  margin: 1rem;
+}
+* {
+  box-sizing: border-box;
+}
+
+aside {
+  width: 38em;
+  max-width: 98vw;
+}
+}
+slot:not([name]) {
+  display: revert;
+}
