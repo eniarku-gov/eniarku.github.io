@@ -2,7 +2,7 @@
 layout: page
 title: Acc_Test
 permalink: /acc_test/
-
+draft: true
 ---
 
 TESTING PAGE FOR CONSTITUTION/LAWS
