@@ -23,3 +23,5 @@ As Eniarku continues to reintegrate itself into the micronational space, the Gov
 *Please note that this website will continue to be updated frequently, as will Eniarku-related pages on MicroWiki.*
 
 [gov-email]: mailto:gov.eniarku@gmail.com
+
+<a onclick="window.history.back()"><Back</a>
