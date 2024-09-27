@@ -18,6 +18,6 @@ Thursday's meeting also saw the enactment of the Immigration and Citizenship Act
 
 <!-- LINKS -->
 
-[2407as]: /docs/acts-of-state/2407as_Immigration%20and%20Citizenship%20Act%20of%202024_AsEnacted-092624.pdf
-[2408as]: /docs/acts-of-state/2408as_Criminal%20Code%20Act%20of%202024_AsEnacted-092624.pdf
-[2409as]: /docs/acts-of-state/2409as_Civil%20Code%20Act%20of%202024_AsEnacted-092624.pdf
+[2407as]: https://drive.google.com/file/d/1qjiKq-mMAQGJRrx33B4y6t4sDhWBGQw_/view?usp=sharing
+[2408as]: https://drive.google.com/file/d/1duF6cYDYEqu09jKVe62Qf5r7_f0Xa0OP/view?usp=sharing
+[2409as]: https://drive.google.com/file/d/1HbAxLC0Rnui6myoDdJAEBAyqf0T1iqSG/view?usp=sharing
