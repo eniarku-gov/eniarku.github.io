@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jubilee begins, updated government website launched"
-date:   2026-05-25 8:00:00 -0500
+date:   2026-05-25 00:00:00 -0500
 categories: press
 ---
 
