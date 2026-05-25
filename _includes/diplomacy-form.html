@@ -1,0 +1,54 @@
+<script src="/assets/js/diplomacy-form.js"></script>
+
+<form id="diplomacy-form"
+      method="post"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSf3H7n71hFDRy6_Q0OzyCWPCDTqf5RVfQM52JlRVZCmXNRszg/formResponse">
+
+    <label>Nation or Entity</label>
+    <input type="text" name="entry.1575788931" required/>
+    
+    <label>Date of Establishment</label>
+    <input type="text" name="entry.915707162" required/>
+
+    <label>Head of State and/or Head of Government</label>
+    <input type="text" name="entry.1210945756" required/>
+
+    <label>Government Structure</label>
+    <input type="text" name="entry.197173114" required/>
+
+    <label>Number of Registered Citizens</label>
+    <input type="text" name="entry.1135227475" required/>
+
+    <label>Location(s) of Territorial Claims</label>
+    <input type="text" name="entry.46608650" required/>
+
+    <label>Website and/or MicroWiki Page</label>
+    <input type="text" name="entry.1033061052" required/>
+
+    <label>Contact Name</label>
+    <input type="text" name="entry.1132874304" required/>
+
+    <label>Contact Email</label>
+    <input type="text" name="entry.1660674737" required/>
+
+    <label class="diplomacy-checkbox">
+        <input type="checkbox" id="diplomacy-consent" required/>
+        <span>
+            I understand the requirements for establishing diplomatic relations outlined in Eniarku's <em>Foreign Diplomatic Policy</em>.
+        </span>
+    </label>
+
+    <input type="hidden" name="entry.197148110" id="diplomacy-consent-hidden" value="" required/>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<div id="diplomacy-success" style="display:none;">
+    <p><strong>Thank you for your interest in entering into diplomatic relations with Eniarku.</strong></p>
+    <p>We will review and respond to your inquiry as soon as possible. Thank you for your patience.</p>
+
+    <button id="diplomacy-reset-btn" type="button">
+        View new form
+    </button>
+</div>

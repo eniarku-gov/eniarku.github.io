@@ -1,0 +1,657 @@
+/* -----------------------------------------------------------
+   Naturalization Form Styling
+   Width-normalized against Minima defaults and other partials
+----------------------------------------------------------- */
+
+.citizenship-form-wrap {
+  width: 100%;
+  //margin: 2rem 0;
+  padding: 2rem 0;
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.citizenship-form {
+  display: block;
+  width: 93%;
+  max-width: $content-width;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Normalize all top-level children of the form */
+.citizenship-form > * {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Make the title box and the section boxes use the same sizing model */
+.citizenship-form-titlebox,
+.citizenship-section-box {
+  display: block;
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 1rem 1rem 1.1rem 1rem;
+  box-sizing: border-box !important;
+}
+
+.citizenship-form-titlebox {
+  margin: 0 0 1rem 0;
+  background: #ffffff;
+  border: 3px solid $border-color-03;
+  text-align: center;
+}
+
+.citizenship-form-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.citizenship-form-subtitle {
+  margin: 0.35rem 0 0 0;
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+/* -----------------------------------------------------------
+   Notice bar
+----------------------------------------------------------- */
+
+.citizenship-notice {
+  display: flex;
+  align-items: center !important;
+  gap: 0.6rem;
+  width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 0.75rem 0.9rem;
+  background: #fff8e1;
+  border: 2px solid #e0c97f;
+  box-sizing: border-box;
+}
+
+.citizenship-notice-icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.citizenship-notice-text {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: #333333;
+}
+
+.citizenship-section {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.citizenship-section-heading {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 0.4rem 0;
+  padding: 0;
+  color: #2d5da8;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  box-sizing: border-box;
+}
+
+.citizenship-section-box {
+  background: #ffffff;
+  border: 3px solid #b7b7b7;
+}
+
+/* Apply consistent vertical spacing between question blocks */
+.citizenship-section-box > * {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.citizenship-section-box > *:last-child {
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------
+   General form layout
+----------------------------------------------------------- */
+
+.citizenship-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.citizenship-form-row:last-child {
+  margin-bottom: 0;
+}
+
+.citizenship-field {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.citizenship-field.full-width {
+  flex: 1 1 100%;
+}
+
+.citizenship-field.grow-1 {
+  flex: 1 1 0;
+}
+
+.citizenship-field.grow-2 {
+  flex: 2 1 0;
+}
+
+.citizenship-field.suffix-field,
+.suffix-field {
+  flex: 0 0 6.5rem;
+}
+
+.signature-date-field {
+  flex: 0 0 12rem;
+}
+
+/* Streamlined width controls for Biographical row 2 */
+.bio-birth-row .bio-birth-gender,
+.bio-birth-row .bio-birth-dob {
+  flex: 0.85 1 0;
+}
+
+.bio-birth-row .bio-birth-place {
+  flex: 1.3 1 0;
+}
+
+/* -----------------------------------------------------------
+   Required fields and validation
+----------------------------------------------------------- */
+
+.citizenship-required-note {
+  color: #7a1f2b;
+  font-weight: 600;
+}
+
+.citizenship-form .is-required::after,
+.citizenship-question-label.is-required::after,
+.citizenship-yn-question.is-required::after,
+.citizenship-checkline.is-required::after {
+  content: " *";
+  color: #7a1f2b;
+  font-weight: 700;
+}
+
+.citizenship-validation-summary {
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+  padding: 0.85rem 1rem;
+  color: #5f1721;
+  background: #fff1f3;
+  border: 2px solid #7a1f2b;
+  box-sizing: border-box;
+}
+
+.citizenship-validation-summary strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.citizenship-validation-summary ul {
+  margin: 0.25rem 0 0 1.2rem;
+  padding: 0;
+}
+
+.citizenship-validation-summary li {
+  margin: 0.2rem 0;
+  line-height: 1.35;
+}
+
+.citizenship-invalid-control,
+.citizenship-invalid-group input[type="checkbox"],
+.citizenship-invalid-group input[type="radio"] {
+  border-color: #7a1f2b !important;
+  box-shadow: 0 0 0 3px rgba(122, 31, 43, 0.12);
+}
+
+.citizenship-invalid-group .citizenship-checkline span {
+  color: #7a1f2b;
+}
+
+/* UPDATED: highlight radio groups with box instead of red text */
+.citizenship-invalid-group .citizenship-yn-options {
+  border: 1px solid #7a1f2b;
+  padding: 0.35rem 0.5rem;
+  box-shadow: 0 0 0 3px rgba(122, 31, 43, 0.12);
+}
+
+/* -----------------------------------------------------------
+   Labels and controls
+----------------------------------------------------------- */
+
+.citizenship-form label,
+.citizenship-question-label,
+.citizenship-yn-question {
+  color: #222222;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.citizenship-attestation-text,
+.citizenship-disclosure-box {
+  color: #222222;
+}
+
+.citizenship-form label {
+  display: block;
+  margin: 0 0 0.35rem 0;
+}
+
+.citizenship-question-label {
+  display: block;
+  margin: 0 0 0.5rem 0;
+}
+
+.citizenship-form input[type="text"],
+.citizenship-form input[type="email"],
+.citizenship-form input[type="date"],
+.citizenship-form input[type="number"],
+.citizenship-form select,
+.citizenship-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.62rem 0.75rem;
+  font: inherit;
+  line-height: 1.35;
+  color: #222222;
+  background-color: #e6eafa !important;
+  background: #e6eafa !important;
+  border: 1px solid #cfcfcf;
+  border-radius: 0;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Prevent browser autofill/default styles from obscuring the form field background. */
+.citizenship-form input:-webkit-autofill,
+.citizenship-form input:-webkit-autofill:hover,
+.citizenship-form input:-webkit-autofill:focus,
+.citizenship-form textarea:-webkit-autofill,
+.citizenship-form textarea:-webkit-autofill:hover,
+.citizenship-form textarea:-webkit-autofill:focus,
+.citizenship-form select:-webkit-autofill,
+.citizenship-form select:-webkit-autofill:hover,
+.citizenship-form select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #e6eafa inset !important;
+  -webkit-text-fill-color: #222222 !important;
+  caret-color: #222222;
+}
+
+.citizenship-form textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+.citizenship-form select {
+  padding-right: 2.2rem;
+  background-color: #e6eafa !important;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #666666 50%),
+    linear-gradient(135deg, #666666 50%, transparent 50%) !important;
+  background-position:
+    calc(100% - 1rem) calc(50% - 0.15rem),
+    calc(100% - 0.7rem) calc(50% - 0.15rem) !important;
+  background-size: 0.35rem 0.35rem, 0.35rem 0.35rem !important;
+  background-repeat: no-repeat !important;
+}
+
+.citizenship-form input:focus,
+.citizenship-form select:focus,
+.citizenship-form textarea:focus {
+  outline: none;
+  border-color: #5ba5e0;
+  box-shadow: 0 0 0 3px rgba(91, 165, 224, 0.15);
+}
+
+/* -----------------------------------------------------------
+   Checkbox / radio groups
+----------------------------------------------------------- */
+
+.citizenship-fieldset.vertical-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: -0.25rem;
+}
+
+.citizenship-checkline {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin: 0;
+  font-weight: 400 !important;
+}
+
+.citizenship-checkline input[type="checkbox"],
+.citizenship-checkline input[type="radio"] {
+  flex: 0 0 auto;
+  margin: 0.2rem 0 0 0;
+  accent-color: #5ba5e0;
+}
+
+.citizenship-checkline span {
+  display: block;
+  color: #222222;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+/* -----------------------------------------------------------
+   Conditional field
+----------------------------------------------------------- */
+
+.citizenship-conditional-field {
+  margin-top: 0.75rem;
+}
+
+/* -----------------------------------------------------------
+   Yes / No rows
+----------------------------------------------------------- */
+
+.citizenship-yn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1.5rem;
+}
+
+.citizenship-yn-item {
+  padding: 0 0 1.5rem 0;
+  border-bottom: 0;
+}
+
+.citizenship-yn-item:first-child {
+  padding-top: 0;
+}
+
+.citizenship-yn-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.citizenship-yn-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0;
+  border-bottom: 0;
+}
+
+.citizenship-yn-question {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-right: 3em;
+}
+
+.citizenship-yn-options {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+.citizenship-yn-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.citizenship-yn-options input[type="checkbox"],
+.citizenship-yn-options input[type="radio"] {
+  margin: 0;
+  accent-color: #5ba5e0;
+}
+
+.citizenship-yn-options span {
+  color: #222222;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+.citizenship-yn-detail {
+  width: 100%;
+  margin-top: 0.65rem;
+}
+
+.citizenship-yn-detail label {
+  display: block;
+  margin: 0 0 0.35rem 0;
+  color: #666666;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+.citizenship-yn-detail input[type="text"] {
+  width: 100%;
+}
+
+/* -----------------------------------------------------------
+   Disclosure + attestation
+----------------------------------------------------------- */
+
+.citizenship-disclosure-box ol {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.citizenship-disclosure-box li {
+  margin: 0.35rem 0 0.35rem 0;
+  line-height: 1.4;
+  list-style-type: upper-alpha;
+}
+
+.citizenship-disclosure-box li::marker {
+  font-weight: bold;
+}
+
+.citizenship-attestation-text {
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+/* -----------------------------------------------------------
+   Actions
+----------------------------------------------------------- */
+
+.citizenship-form-actions {
+  width: 100%;
+  margin-top: 1.5rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.citizenship-submit-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0.65rem 1.2rem;
+  font: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #f5f5f5;
+  background: #4b5563;
+  border: 1px solid #4b5563;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.05s ease;
+}
+
+.citizenship-submit-button:hover,
+.citizenship-submit-button:focus {
+  background: #5ba5e0;
+  border-color: #5ba5e0;
+  text-decoration: none;
+}
+
+.citizenship-submit-button:active {
+  transform: translateY(1px);
+}
+
+/* -----------------------------------------------------------
+   Responsive adjustments
+----------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .citizenship-yn-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .citizenship-yn-options {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 700px) {
+  .citizenship-form-wrap {
+    padding: 1.5rem 0;
+  }
+
+  .citizenship-form {
+    width: 100%;
+  }
+
+  .citizenship-form-row {
+    gap: 0.75rem;
+  }
+
+  .name-row .citizenship-field,
+  .two-col-row .citizenship-field,
+  .three-col-row .citizenship-field,
+  .suffix-field,
+  .signature-date-field,
+  .bio-birth-row .bio-birth-gender,
+  .bio-birth-row .bio-birth-dob,
+  .bio-birth-row .bio-birth-place,
+  .bio-birth-row .bio-eid-number {
+    flex: 1 1 100%;
+  }
+
+  .citizenship-submit-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Section 3 conditional textareas use the existing .is-required marker and invalid-control styling when required. */
+/* -----------------------------------------------------------
+   Section 2: Force ALL CAPS input
+----------------------------------------------------------- */
+
+.citizenship-section[data-section="2"] input,
+.citizenship-section[data-section="2"] textarea {
+  text-transform: uppercase;
+}
+
+
+/* Section 1 option detail fields also use all-caps input styling. */
+.citizenship-option-item .citizenship-conditional-field input[type="text"],
+.citizenship-option-item .citizenship-conditional-field textarea {
+  text-transform: uppercase;
+}
+
+/* Make option-detail validation match yes/no group validation. */
+.citizenship-invalid-group .citizenship-conditional-field {
+  border-left: 3px solid #7a1f2b;
+  padding-left: 0.75rem;
+}
+
+/* -----------------------------------------------------------
+   Citizenship form success confirmation
+----------------------------------------------------------- */
+
+.citizenship-success {
+  display: block;
+  width: 90%;
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  background: #ffffff;
+  border: 3px solid #b7b7b7;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.citizenship-success p {
+  margin: 0.5rem 0;
+  color: #222222;
+  line-height: 1.4;
+}
+
+.citizenship-success button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.65rem 1.2rem;
+  font: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #f5f5f5;
+  background: #4b5563;
+  border: 1px solid #4b5563;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.05s ease;
+}
+
+.citizenship-success button:hover,
+.citizenship-success button:focus {
+  background: #5ba5e0;
+  border-color: #5ba5e0;
+  text-decoration: none;
+}
+
+.citizenship-success button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 700px) {
+  .citizenship-success {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .citizenship-success button {
+    width: 100%;
+    text-align: center;
+  }
+}

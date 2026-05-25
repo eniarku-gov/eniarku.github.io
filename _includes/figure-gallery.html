@@ -1,0 +1,13 @@
+<figure class="figure-gallery {{ include.align | default: 'none' }}"
+        style="{% if include.width %}width: {{ include.width }};{% endif %}">
+  <div class="figure-gallery-images">
+    {% assign srcs = include.srcs | split: '|' %}
+    {% assign alts = include.alts | split: '|' %}
+    {% for src in srcs %}
+      <img src="{{ src | strip }}" alt="{{ alts[forloop.index0] | strip }}">
+    {% endfor %}
+  </div>
+  {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

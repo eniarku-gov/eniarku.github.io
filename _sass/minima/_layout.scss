@@ -1,41 +1,23 @@
 /**
  * Site header
  */
- .site-header {
-  border-top: 5px solid $border-color-03;
-  border-bottom: 1px solid $border-color-01;
-  min-height: $spacing-unit * 1.865;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  position: relative; // Positioning context for the mobile navigation icon
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: $head-font-family;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.wrapper {
+.site-header {
+  position: relative;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.banner-image {
-  max-width: 100%; // Ensure the banner image does not overflow
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  min-height: $spacing-unit * 1.865;
+  line-height: $base-line-height * $base-font-size * 2;
+  background-color: $background-color;
+  border-top: 10px solid $border-color-03;
+  border-bottom: 1px solid $border-color-01;
 }
 
 .site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
+  @include relative-font-size(1.865);
+  font-weight: 500;
   letter-spacing: -1px;
+  margin-top: $spacing-unit * 0.5;
   margin-bottom: 0;
-  float: center;
+  float: left;
 
   @include media-query($on-palm) {
     padding-right: 45px;
@@ -48,56 +30,200 @@
 }
 
 .site-nav {
-  display: flex;
-  justify-content: center; // Centers the navbar horizontally
-  align-items: center; // Centers the navbar vertically
-  background-color: transparent;
-  border-radius: 5px;
-  text-align: center; // Centers text within the navbar
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  font-weight: 300;
+  //letter-spacing: 0.05em;
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px; // Adjust gap between links as needed
-
-    .page-link {
-      color: $text-color;
-      line-height: $base-line-height;
-      text-decoration: none;
-      padding: 5px 10px;
-      font-family: inherit; // Ensures the navbar links use the same font as the body
-      position: relative;
-
-      // Style ::before pseudo-element to create background effect
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1; // Send psuedo-element behind text
-        border-radius: 5px; // Adjust border radius to match navbar item
-        transition: background-color 0.3s ease; // Smooth transition to new color
-      }
-  
-      // Hover text color
-      &:hover {
-        color: #ffffff;
-      }
-  
-      // Hover "tab" color
-      &:hover::before {
-        background-color: #2981D6;
-      }
-    
-    }
-
+  label[for="nav-trigger"], #nav-trigger {
+    display: none;
   }
 
+  // ── The flex row that makes tabs horizontal ────────────────────────────
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    height: 30px;
+    //margin: 0;
+    margin-left: -$spacing-unit * 0.25;
+    margin-top: $spacing-unit * .5;
+    margin-bottom: $spacing-unit * .5;
+    padding: 0;
+  }
+
+  // Regular nav tab
+  .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 $spacing-unit * .75;
+    color: $text-color;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      border-right: 1px solid $border-color-02;
+    }
+  }
+
+  // Dropdown nav tab
+  .nav-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 $spacing-unit * .75;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      border-right: 1px solid $border-color-02;
+    }
+
+    .nav-link {
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 100;
+      list-style: none;
+      margin: 0;
+      padding: 0.25rem 0;
+      min-width: 160px;
+      background-color: $background-color;
+      border: 1px solid $border-color-01;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+      li a {
+        display: block;
+        padding: 0.4rem 1rem;
+        white-space: nowrap;
+        color: $text-color;
+        text-decoration: none;
+        line-height: $base-line-height;
+
+        &:hover {
+          background-color: $border-color-01;
+        }
+      }
+    }
+
+    &:hover .dropdown-menu {
+      display: block;
+    }
+  }
+
+  // ── Mobile (hamburger) ─────────────────────────────────────────────────
+  @include media-query($on-medium) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit * 0.6;
+    width: auto;
+    background-color: $background-color;
+    border: 1px solid $border-color-01;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 18px;
+      text-align: center;
+
+      &::before {
+        font-family: "Font Awesome 7 Free";
+        font-weight: 900;
+      }
+
+      > svg path {
+        fill: $border-color-03;
+      }
+    }
+
+    #nav-trigger {
+      ~ label[for=nav-trigger] .menu-icon {
+        &::before {
+          content: "\f0c9";
+          font-size: 1.25em;
+        }
+      }
+      ~ .nav-items {
+        clear: both;
+        display: none;
+      }
+      &:checked {
+        ~ label[for=nav-trigger] .menu-icon {
+          &::before {
+            content: "\f00d";
+            font-size: 1.5em;
+          }
+        }
+        ~ .nav-items {
+          // Override flex: stack vertically in the hamburger menu
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    // Reset horizontal styles for stacked mobile tabs
+    .page-link,
+    .nav-dropdown {
+      display: block;
+      width: 100%;
+      padding: 5px 10px;
+      margin-left: 0;
+      border-right: none;
+      text-align: left;
+    }
+
+    // Dropdown always open in mobile menu (no hover needed)
+    .nav-dropdown {
+      position: static;
+
+      .dropdown-menu {
+        display: block;
+        position: static;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        background-color: transparent;
+
+        li a {
+          padding: 3px 0 3px 1rem;
+          font-size: 0.9em;
+
+          &:hover {
+            background-color: transparent;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
+
 
 
 /**
@@ -106,6 +232,7 @@
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
+  letter-spacing: 0.05em;
 }
 
 .footer-heading {
@@ -126,7 +253,7 @@
 .footer-col-wrapper,
 .social-links {
   @include relative-font-size(0.9375);
-  color: $brand-color;
+  color: $brand-color-dimmed;
 }
 
 .footer-col {
@@ -158,7 +285,7 @@
 
 @media screen and (min-width: $on-medium) {
   .footer-col-wrapper {
-    display: flex
+    display: flex;
   }
 
   .footer-col {
@@ -193,15 +320,6 @@
 
 .post-list-heading {
   @include relative-font-size(1.75);
-
-  @media screen and (min-width: $on-large) {
-    @include relative-font-size(2);
-  }
-
-  font-variant: small-caps;
-  font-weight: bold;
-  letter-spacing: 1px;
-
 }
 
 .post-list {
@@ -215,7 +333,7 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: $brand-color;
+  color: $brand-color-dimmed;
 }
 
 .post-link {
@@ -230,18 +348,35 @@
  */
 .post-header {
   margin-bottom: $spacing-unit;
+  padding-bottom: 18px;
+  text-align: center;
+  border-bottom: 1px solid $border-color-01;
+}
+
+.post-meta {
+  .bullet-divider { padding-inline: 15px }
+  .meta-label { font-weight: 600 }
+
+  .force-inline {
+    display: inline;
+    &::before {
+      content: "•";
+      padding-inline: 5px;
+    }
+  }
+  .post-authors { margin-top: 3px }
 }
 
 .post-title,
 .post-content h1 {
-  @include relative-font-size(2.625);
-  letter-spacing: 1px;
-  line-height: 0.75;
-  font-variant: small-caps;
-  font-weight: bold;
+  margin-bottom: 10px;
+  @include relative-font-size(2.225);
+  font-weight: $base-font-weight;
+  letter-spacing: -1px;
+  line-height: 1.15;
 
   @media screen and (min-width: $on-large) {
-    @include relative-font-size(2.625);
+    @include relative-font-size(2.225);
   }
 }
 
@@ -256,9 +391,6 @@
     @media screen and (min-width: $on-large) {
       @include relative-font-size(2);
     }
-
-    font-variant: small-caps;
-
   }
 
   h3 {
@@ -281,12 +413,19 @@
   }
 }
 
+.comments-disabled-message {
+  text-align: center;
+  font-weight: 300;
+}
 
 .social-media-list {
   display: table;
   margin: 0 auto;
   li {
     float: left;
+    min-width: 45px;
+    min-height: 45px;
+    text-align: center;
     margin: 5px 10px 5px 0;
     &:last-of-type { margin-right: 0 }
     a {
@@ -304,24 +443,73 @@
  * Pagination navbar
  */
 .pagination {
-  margin-bottom: $spacing-unit;
-  @extend .social-media-list;
+  display: table;
+  margin: 0 auto;
+  list-style-type: none;
   li {
+    float: left;
+    margin: 0 3px;
+    min-width: 45px;
+    min-height: 45px;
+    text-align: center;
+    a {
+      display: block;
+      text-decoration: none;
+      border: 1px solid $border-color-01;
+      &:hover { border-color: $border-color-02 }
+    }
     a, div {
       min-width: 41px;
+      padding: 10px 12px;
       text-align: center;
       box-sizing: border-box;
     }
     div {
-      display: block;
-      padding: $spacing-unit * .25;
       border: 1px solid transparent;
-
       &.pager-edge {
         color: $border-color-01;
         border: 1px dashed;
       }
+      &.current-page {
+        font-weight: bold;
+      }
     }
+  }
+}
+
+
+
+/**
+ * Task-lists
+ */
+
+.task-list {
+  margin-left: 0;
+  padding-left: $spacing-unit * 0.6;
+}
+
+.task-list-item {
+  list-style-type: none;
+  &-checkbox {
+    position: relative;
+    margin-right: $spacing-unit * 0.3;
+    margin-left: -$spacing-unit * 0.5;
+    appearance: none;
+    border: 8px solid $border-color-01;
+    vertical-align: text-top;
+    z-index: -1;
+    &::after {
+      position: absolute;
+      top: -8px;
+      left: -3px;
+      width: 4px;
+      height: 10px;
+      content: "";
+      border: solid transparent;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    &:checked::after { border-color: $border-color-03 }
   }
 }
 
@@ -334,80 +522,4 @@
   .one-half {
     width: calc(50% - (#{$spacing-unit} / 2));
   }
-}
-
-
-
-
-/**
-  * Horizontal rules (hr)
-  * Useful links:
-  *   https://codepen.io/ibrahimjabbari/pen/DPQaWB
-  *   https://uicookies.com/html-hr-css/
-  */
-.faded-hr { 
-  border: 0; 
-  height: 1px; 
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
-}
-
-
-
-
-/**
-  * Accordion-style <details> elements
-  * Useful links:
-  *   https://www.sitepoint.com/style-html-details-element/
-  *   https://codepen.io/web-dot-dev/pen/PodYGBz
-  */
-  @layer setupPage;
-
-details {
-  border: 1px solid;
-  padding: 0 1rem;
-  background: white;
-}
-details + details {
-  border-top: none;
-}
-details[open] {
-    padding-bottom: 1em;
-}  
-summary {
-  padding: 1rem 2em 1rem 0;
-  font-size: 1.25rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-
-/* cascade layer: page setup. Doesn't impact the accordion */
-@layer setupPage {
-  
-:root {
-  font-size: 112.5%;
-  line-height: 1.5;
-}
-body {
-  background: #a4bacc99;
-  color: #226daa;
-  font-family: Raleway, sans-serif;
-  margin: 1rem;
-}
-* {
-  box-sizing: border-box;
-}
-
-aside {
-  width: 38em;
-  max-width: 98vw;
-}
-}
-slot:not([name]) {
-  display: revert;
 }

@@ -5,7 +5,7 @@ date:   2024-09-15
 category: press
 ---
 
-**BALDWIN HOUSE, Glenora** — This past Friday, HRH The Grand Duke issued a package of Letters Patent appointing foreign dignitaries to orders of state for the first time in Eniarku's history. The individuals conferred new honours by [Letters Patent 2405-2408][2405lp2408] are:
+**BALDWIN HOUSE, Glenora** — This past Friday, HRH The Grand Duke issued a package of Letters Patent appointing foreign dignitaries to orders of state for the first time in Eniarku's history. The individuals conferred new honours by Letters Patent 2405-2408 are:
 - HIM Jonathan of Austenasia
 - HI&RAM Oscar of Karnia-Ruthenia
 - HM William, King in Illinois
@@ -18,10 +18,3 @@ Several other domestic honours recipients were also announced last week on 6 Sep
 The Council of State has also resumed work on the criminal and civil codes announced in July following its lengthy end of summer recess, while a major project to update the Government website has been put on hold, owing to time constraints by administrators.
 
 <a onclick="window.history.back()"><Back</a>
-
-
-
-
-<!-- LINKS -->
-
-[2405lp2408]: /docs/letters-patent/2405lp2408.pdf

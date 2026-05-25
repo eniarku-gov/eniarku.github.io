@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="svg-inline--fa fa-hourglass-half commons stage-in-progress-hero"
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fas"
+   data-icon="hourglass-half"
+   role="img"
+   viewBox="0 0 500 500"
+   data-fa-i2svg=""
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="status_notapp.svg"
+   inkscape:version="1.4.3 (0d15f750, 2025-12-25)"
+   width="500"
+   height="500"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.75426824"
+     inkscape:cx="202.18271"
+     inkscape:cy="214.11481"
+     inkscape:window-width="1720"
+     inkscape:window-height="1306"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <g
+     id="g1">
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#969696;stroke-width:38.4466;stroke-dasharray:none;stroke-opacity:1"
+       id="path2"
+       cx="250"
+       cy="250"
+       r="230.77672" />
+    <rect
+       style="fill:#969696;fill-opacity:1;stroke:#969696;stroke-width:29.05;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1-8"
+       width="456.47723"
+       height="22.823862"
+       x="-228.23862"
+       y="342.14145"
+       transform="rotate(-45)" />
+  </g>
+</svg>

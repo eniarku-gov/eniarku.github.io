@@ -3,12 +3,12 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-list_title: "Recent News"
+title: Home
+permalink: /
 ---
 
-<!-- ![image tooltip here](/images/GDEN_gov_logo.png) -->
+The Grand Duchy of Eniarku is a semi-constitutional monarchy located in the United States. We are a micronation --- a self-proclaimed sovereign state not recognized by the international community --- that was established on 29 May 2009. What began over a decade ago as a backyard political experiment has since evolved into one of the longest-standing micronational states in the North American sector complete with its own unique customs, laws, and culture.
 
-Welcome to the official website of the Government of the Grand Duchy of Eniarku, a sovereign micronation located in North America. Please explore this website and our pages on [MicroWiki][microwiki] for more information and news about Eniarku, or [contact us][gov-email] with questions or comments. *Viva Eniarku!*
+Please explore this website and the wealth of knowledge on [MicroWiki](https://micronations.wiki/wiki/Grand_Duchy_of_Eniarku) for more information about Eniarku and the broader micronational community. The latest updates can be found on the [News]({% link news.markdown %}) page.
 
-[microwiki]: https://micronations.wiki
-[gov-email]: mailto:gov.eniarku@gmail.com
+You can apply for citizenship via the forms on the [Citizenship]({% link citizenship.markdown %}) page. Any other inquiries or comments (including website bug reports) can be submitted via the [Contact]({% link contact.markdown %}) page.

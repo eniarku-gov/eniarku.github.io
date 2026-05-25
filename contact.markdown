@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: home
 title: Contact
 permalink: /contact/
-hide_title: true
 ---
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNmibYv0YblXrcOSrHcgbPzCnH9fRVYR3t0zElZa1fX24zvQ/viewform?embedded=true" width="800" height="665" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+If you would like to connect with the government, please submit the contact form below or contact us via email at [gov.eniarku@gmail.com](mailto:gov.eniarku@gmail.com). Please note that all new diplomatic inquiries should be submitted via the [Diplomacy]({% link diplomacy.markdown %}#diplomatic-inquiries) page.
+
+{% include contact-form.html %}

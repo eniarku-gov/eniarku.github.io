@@ -18,31 +18,29 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Government of Eniarku
+title: Grand Duchy of Eniarku
 email: gov.eniarku@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is an official website of the Government of the Grand Duchy of Eniarku.
+  Official website of the Government of Eniarku.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://eniarku.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  eniarku-gov
-# header: images/GDEN_gov_logo.png
+#twitter_username: jekyllrb
+github_username:  eniarku
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-show_excerpts: true
 
-# Navigation pages
-header_pages:
-  - index.markdown
-  - home.markdown
-  - about.markdown
-  - history.markdown
-  #- laws.markdown
-  - contact.markdown
-  #- acc_test.markdown
+minima:
+  nav_pages:
+    - index.markdown
+    - about.markdown
+    - news.markdown
+    - government.markdown
+    - laws.markdown
+    - contact.markdown
+  show_excerpts: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -52,7 +50,8 @@ header_pages:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - /drafts/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

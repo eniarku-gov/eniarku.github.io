@@ -1,0 +1,7 @@
+<figure class="figure-float {{ include.align | default: 'right' }}"
+        style="{% if include.width %}width: {{ include.width }};{% else %}max-width: 300px;{% endif %}">
+  <img src="{{ include.src }}" alt="{{ include.alt }}">
+  {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

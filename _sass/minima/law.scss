@@ -1,0 +1,983 @@
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+  LOAD ADDITIONAL SCSS FILES
+--------------------------------------------------------------
+----------------------------------------------------------- */
+@import "minima/diplomacy-form";
+@import "minima/citizenship-form";
+@import "minima/contact-form";
+
+
+
+/* -----------------------------------------------------------
+   Index tables: prevent wrapping in Document column
+----------------------------------------------------------- */
+
+/* Index table columns */
+.index-table th:first-child,
+.index-table td:first-child {
+  white-space: nowrap;
+  width: 10rem;
+  table-layout: fixed;
+}
+
+/* Space between ECJ header and table on Title index */
+.law-titles-index .context-headers {
+  margin-bottom: 1.25rem;  /* adjust to taste */
+}
+
+
+/* Space between Title header and table on Title index pages */
+.law-title-index .context-headers {
+  margin-bottom: 1.25rem;  /* adjust to taste */
+}
+
+
+/* Space between Acts header and table on Acts index */
+.law-acts-index .context-headers {
+  margin-bottom: 1.25rem;
+}
+
+
+/* -----------------------------------------------------------
+   Act index page: enacting clause
+----------------------------------------------------------- */
+
+.enacting-clause {
+  font-style: italic;
+  margin-bottom: 1.25rem;
+}
+
+
+/* -----------------------------------------------------------
+   Context header: Font sizing
+----------------------------------------------------------- */
+
+/* Act name */
+.context-act-name {
+  font-size: 1.75em;    /* slightly smaller than default h1 */
+  //text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  // font-variant: small-caps;
+  line-height: 1.2;
+  margin: 0.2rem 0;
+}
+
+
+/* -----------------------------------------------------------
+   Section prev/next navigation (inside context header)
+----------------------------------------------------------- */
+
+.section-prev-next {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.section-nav-btn {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.section-nav-btn:hover {
+  text-decoration: underline;
+}
+
+.section-nav-btn.is-disabled {
+  opacity: 0.5;
+  cursor: default;
+  text-decoration: none;
+}
+
+
+/* -----------------------------------------------------------
+   Back-to-ECL navigation (Title index pages only)
+----------------------------------------------------------- */
+
+.law-backnav {
+  text-align: center;
+  margin: 0 0 1.25rem 0;
+}
+
+
+/* -----------------------------------------------------------
+   Act view toggle button
+----------------------------------------------------------- */
+
+.act-view-nav {
+  text-align: center;
+  margin: 0 0 0.75rem 0;
+}
+
+.act-view-nav .act-view-btn {
+  display: inline-block;
+}
+
+
+/* -----------------------------------------------------------
+    Orders-in-Council formatting
+----------------------------------------------------------- */
+
+.order-court-line {
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 1.5rem 0 1.15rem 0;
+}
+
+.order-date-line,
+.order-present-line,
+.order-enacting-clause {
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 1.15rem 0;
+}
+
+.law-order .section-text p + p {
+  margin-top: 1.15rem;   /* tweak to taste */
+}
+
+
+/* -----------------------------------------------------------
+    Letters Patent formatting
+----------------------------------------------------------- */
+
+.law-letter .section-text {
+  margin-top: 1.25rem;
+}
+
+.law-letter .section-text p + p {
+  margin-top: 1.15rem;
+}
+
+.letters-warrant-line {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 1.5rem 0 1.15rem 0;
+}
+
+
+/* -----------------------------------------------------------
+   Proclamation formatting
+----------------------------------------------------------- */
+
+.law-proclamation .section-text {
+  margin-top: 1.75rem;
+}
+
+.law-proclamation .section-text p + p {
+  margin-top: 1.15rem;
+}
+
+.proclamation-header-block {
+  text-align: center;
+  margin: 2rem 0 1.75rem 0;
+}
+
+.proclamation-coa {
+  display: block;
+  margin: 0 auto 1.35rem auto;
+  max-width: 165px;
+}
+
+.proclamation-byline,
+.proclamation-title-line {
+  text-align: center;
+  text-transform: uppercase;
+  text-indent: 0;
+  font-weight: 500;
+}
+
+.proclamation-byline {
+  letter-spacing: 0.34em;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.proclamation-title-line {
+  font-size: 2.3em;
+  letter-spacing: 0.34em;
+  margin: 0;
+}
+
+.proclamation-date-line {
+  clear: both;
+  text-align: center;
+  margin: 1.75rem 0 0.75rem 0;
+  text-indent: 0;
+}
+
+/* -----------------------------------------------------------
+   Section page text: single-spaced, first-line indented
+   Applies to text generated from text_clean / text_raw
+----------------------------------------------------------- */
+
+.section-text p {
+  text-indent: 2em;     /* keep first-line indent */
+  line-height: 1.35;     /* single-spaced feel */
+  margin: 0;            /* remove default paragraph margins */
+}
+
+/* Small, controlled gap between paragraphs */
+.section-text p + p {
+  margin-top: 0.25rem;  /* reduced from 0.75rem */
+}
+
+
+/* -----------------------------------------------------------
+   Section page header (Section # — description)
+   Same size as body text, bold, single-spaced
+----------------------------------------------------------- */
+
+/* Section page header only (not context headers) */
+.law-section > h1 {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 0.5rem 0;
+}
+
+.law-act-full > h1 {
+  font-size:1em;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.full-act-chapter-heading {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+  margin: 1.55rem 0 0.75rem 0;
+}
+
+
+/* -----------------------------------------------------------
+   Shared context header alignment
+----------------------------------------------------------- */
+
+/* Center-aligned context header block */
+.context-headers {
+  text-align: center;
+}
+
+/* Optional: only if you want a reusable top/bottom rhythm */
+.context-title,
+.context-act-number,
+.context-act-longtitle,
+.context-chapter-line {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Vertical spacing between context header elements */
+.context-headers p {
+  margin: 0.75rem 0;
+}
+
+.context-headers h1 {
+  margin: 0.25rem 0;
+}
+
+
+/* -----------------------------------------------------------
+   Acts landing page header
+----------------------------------------------------------- */
+
+.acts-index-header {
+  margin-bottom: 1.25rem;
+}
+
+
+/* -----------------------------------------------------------
+   Orders landing page header
+----------------------------------------------------------- */
+
+.orders-index-header {
+  margin-bottom: 1.25rem;
+}
+
+
+/* -----------------------------------------------------------
+   Letters landing page header
+----------------------------------------------------------- */
+
+.letters-index-header {
+  margin-bottom: 1.25rem;
+}
+
+/* -----------------------------------------------------------
+   Proclamations landing page header
+----------------------------------------------------------- */
+
+.proclamations-index-header {
+  margin-bottom: 1.25rem;
+}
+
+
+/* -----------------------------------------------------------
+   "Header" crown for Orders and Letters pages
+----------------------------------------------------------- */
+.royal-crown-alt {
+  display: block;
+  margin: 2rem auto auto auto;
+  max-width: 115px;
+  opacity: 0.9;
+}
+
+
+/* -----------------------------------------------------------
+   Act index page: enacting clause
+----------------------------------------------------------- */
+
+.enacting-clause {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+}
+
+
+/* -----------------------------------------------------------
+   Shared signature and seal block
+----------------------------------------------------------- */
+
+.document-signature-block {
+  text-align: center;
+  float: right;
+  margin-right: 2.5rem;
+  margin-top: 0.50rem;
+}
+
+.document-signature {
+  font-variant: small-caps;
+  font-size: 1.25em;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.document-seal {
+  display: block;
+  margin: 0 auto;
+  max-width: 60px;
+}
+
+/* Backward-compatible aliases */
+.order-signature-block {
+  text-align: center;
+  float: right;
+  margin-right: 2.5rem;
+  margin-top: 0.50rem;
+}
+
+.order-signature {
+  font-variant: small-caps;
+  font-size: 1.15em;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.order-seal {
+  display: block;
+  margin: 0 auto;
+  max-width: 50px;
+}
+
+
+/* Letters signature date */
+.document-date {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+
+/* Letters block indent */
+.law-letter .section-text p.letter-block-indent {
+  text-indent: 0;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+
+/* -----------------------------------------------------------
+   History footer
+----------------------------------------------------------- */
+
+.history-footer {
+  clear: both;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.35;
+  margin-top: 1rem;
+}
+
+.history-footer strong {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/* RESOLUTIONS */
+/* -----------------------------------------------------------
+   Resolutions index
+----------------------------------------------------------- */
+
+.resolutions-index-header {
+  margin-bottom: 1.25rem;
+}
+
+.resolution-index-table th:nth-child(2),
+.resolution-index-table td:nth-child(2),
+.resolution-index-table th:nth-child(3),
+.resolution-index-table td:nth-child(3) {
+  white-space: nowrap;
+}
+
+/* -----------------------------------------------------------
+   Resolution pages
+----------------------------------------------------------- */
+
+/* Apply monospaced font ONLY to resolution content */
+.law-resolution .resolution-header,
+.law-resolution .resolution-title-paragraph,
+.law-resolution .resolution-enacting-clause,
+.law-resolution .resolution-text,
+.law-resolution .resolution-full-id,
+.law-resolution .resolution-full-title {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.resolution-text {
+  line-height: 1.75;
+}
+
+/*.resolution-header {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}*/
+
+.resolution-id {
+  font-size: 2.25em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.resolution-status-line {
+  text-align: center;
+  margin: 0.35rem 0 1rem 0;
+  font-size: 0.95em;
+}
+
+.resolution-title-paragraph {
+  text-indent: 2em;
+  text-align: left;
+  line-height: 1.75;
+  margin: 0 0 1.5rem 0;
+}
+
+.resolution-enacting-clause {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+  letter-spacing: 0.03em;
+}
+
+.resolution-text p {
+  text-indent: 2em;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/*.resolution-text p + p {
+  margin-top: 0.25rem;
+}*/
+
+.resolution-subhead {
+  text-align: center;
+  text-indent: 0 !important;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0 !important;
+}
+
+.resolution-block-indent {
+  text-indent: 0 !important;
+  margin-left: 3em !important;
+  margin-right: 3em !important;
+}
+
+.res-add {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.res-del {
+  text-decoration: line-through;
+}
+
+.resolution-prev-next {
+  margin: 0 0 1rem 0;
+}
+
+.resolution-prev-next .resolution-back-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* ===========================================================
+   Added layout rules for Act/Order/Letter page headers,
+   meta bars, and top-level landing-page sub-navigation.
+   Appended to preserve existing unchanged component styles.
+=========================================================== */
+
+.law-page-title {
+  margin: 0 0 0.7rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: left;
+  text-transform: none;
+}
+
+.act-page-header {
+  margin: 0;
+}
+
+.law-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.45rem;
+  margin: 0 0 1rem 0;
+  font-size: 0.82rem;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.law-breadcrumb,
+.law-breadcrumb:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.law-breadcrumb:hover,
+.law-breadcrumb:focus {
+  text-decoration: underline;
+}
+
+.law-breadcrumb.current,
+.law-breadcrumb.current:visited {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.law-breadcrumb-sep {
+  color: inherit;
+  opacity: 0.65;
+}
+
+.act-view-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.act-view-tab,
+.act-view-tab:visited {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  min-width: 12rem;
+  text-decoration: none;
+}
+
+.act-view-tab > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.55rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.single-view-nav .single-view-tab {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  min-width: 12rem;
+}
+
+.single-view-nav .single-view-tab > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.55rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.law-meta-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  box-sizing: border-box;
+  margin: 0 0 1.5rem 0;
+  padding: 0.7rem 1rem;
+  min-height: 3rem;
+}
+
+.law-meta-left {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.law-meta-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.law-meta-history {
+  text-align: left;
+  font-size: 0.9em;
+  line-height: 1.35;
+}
+
+.law-meta-history strong {
+  font-weight: 700;
+}
+
+.law-meta-right .section-prev-next {
+  margin: 0;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.law-meta-right .section-nav-btn,
+.law-meta-right .section-nav-btn:visited {
+  padding: 0.16rem 0.55rem;
+  font-size: 0.82em;
+  line-height: 1.2;
+}
+
+.law-meta-right .always-show-nav .section-nav-btn.is-disabled {
+  display: inline-block;
+  opacity: 0.45;
+}
+
+.act-header-block {
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+}
+
+.act-coa {
+  display: block;
+  margin: 0 auto 0 auto;
+  max-width: 160px;
+  height: auto;
+}
+
+.act-primary-title {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+.act-secondary-title {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.chapter-page-heading {
+  margin: 0 0 1rem 0;
+  font-size: 1.35rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+.section-page-heading {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.full-act-section-heading {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 1.5rem 0 0.5rem 0;
+  text-align: left;
+}
+
+.law-act-full .section-text {
+  margin-bottom: 0.9rem;
+}
+
+.law-act-full > .document-signature-block {
+  margin-top: 0.2rem;
+}
+
+.law-meta-bar + .act-header-block,
+.law-meta-bar + .index-table,
+.law-meta-bar + .section-page-heading,
+.law-meta-bar + .chapter-page-heading {
+  margin-top: 0;
+}
+
+.landing-index-header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.landing-index-header .context-act-name {
+  text-align: center;
+}
+
+.landing-view-nav {
+  margin: 0 0 1.5rem 0;
+}
+
+.landing-view-nav .act-view-tab,
+.landing-view-nav .act-view-tab:visited {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.landing-view-nav .act-view-tab > span {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .law-page-title {
+    font-size: 1.65rem;
+  }
+
+  .act-view-nav {
+    flex-wrap: wrap;
+  }
+
+  .act-view-tab,
+  .single-view-tab,
+  .landing-view-nav .act-view-tab {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .law-meta-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+  }
+
+  .law-meta-right {
+    justify-content: flex-start;
+  }
+
+  .law-meta-right .section-prev-next {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+
+
+/* ===========================================================
+   Restore visual styling for sub-nav and meta bars
+   (uses same palette approach as existing site—no overrides)
+=========================================================== */
+
+.act-view-nav,
+.landing-view-nav {
+  background: $border-color-03;
+  border: 1px solid #dfdfdf;
+  border-bottom: 0;
+  //border-radius: 6px 6px 0 0;
+}
+
+.act-view-tab:hover,
+.act-view-tab:focus {
+  background: #4b5563;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.act-view-tab,
+.act-view-tab:visited {
+  color: #f5f5f5;
+}
+
+.act-view-tab.is-active {
+  background: #5ba5e0;
+  color: #ffffff;
+  //border-bottom: 2px solid #ffffff;
+}
+
+//Resolution sub-nav: purple active tab ONLY
+.law-resolution .resolution-view-nav .act-view-tab.is-active {
+  background: #6b4fd3;   /* purple */
+  color: #ffffff;
+}
+
+.law-meta-bar {
+  background: #f5f5f5;
+  border: 1px solid #dfdfdf;
+  border-top: 0;
+  //color: #f5f5f5;
+  //border-radius: 0 0 6px 6px;
+}
+
+/*.law-meta-bar a,
+.law-meta-bar a:visited {
+  color: #ffffff;
+}
+*/
+/* ===========================================================
+   Title-page alignment for title header + sub-nav + meta bar
+   Keeps title pages visually consistent with Act/Order/Letter pages
+=========================================================== */
+
+.law-title-index .context-headers {
+  text-align: left;
+  margin-bottom: 0.7rem;
+}
+
+.law-title-index .context-headers .context-act-name {
+  text-align: left;
+}
+
+.law-title-index .landing-view-nav {
+  margin-bottom: 0;
+}
+
+.law-title-index .law-meta-bar {
+  margin-top: 0;
+}
+
+/* -----------------------------------------------------------
+   Resolution status table: no zebra striping; current row highlight
+----------------------------------------------------------- */
+
+.resolution-status-table tbody tr:nth-child(odd),
+.resolution-status-table tbody tr:nth-child(even) {
+  background: transparent;
+}
+
+.resolution-status-table tbody tr.is-current-stage {
+  background: #f2f2f2;
+}
+
+.resolution-status-table td:first-child,
+.resolution-status-table th:first-child {
+  width: 4.5rem;
+  text-align: center;
+}
+
+.resolution-stage-icon {
+  display: block;
+  width: 1.85rem;
+  height: 1.85rem;
+  margin: 0 auto;
+  //vertical-align: middle;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.resolution-status-table td:first-child img {
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.resolution-meta-line em {
+  font-style: italic;
+}
+
+
+.resolution-full-id {
+  text-align: center;
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.75rem 0;
+}
+
+.resolution-full-title {
+  text-indent: 2em;
+  line-height: 1.75;
+  margin: 0 0 1.5rem 0;
+}
+
+
+/* --- Resolution icon fixes (override) --- */
+.resolution-stage-icon {
+  display: block;
+  width: 1.85rem;
+  height: 1.85rem;
+  margin: 0 auto;
+  //vertical-align: middle;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.resolution-stage-icon::before,
+.resolution-stage-icon::after {
+  content: none !important;
+}
+
+.resolution-status-table td:first-child img {
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}

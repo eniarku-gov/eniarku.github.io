@@ -1,0 +1,219 @@
+/* -----------------------------------------------------------
+   Diplomacy Form Styling
+   Matches Minima + your existing law.scss patterns
+----------------------------------------------------------- */
+
+form[action*="docs.google.com/forms"]:not(.citizenship-form) {
+  max-width: $content-width;
+  margin: 2rem auto;
+  padding: 1.5rem 1.5rem 1.25rem 1.5rem;
+  background: #f5f5f5;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Labels */
+form[action*="docs.google.com/forms"]:not(.citizenship-form) > label {
+  display: block;
+  margin: 1rem 0 0.35rem 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #222;
+}
+
+form[action*="docs.google.com/forms"]:not(.citizenship-form) > label:first-of-type {
+  margin-top: 0;
+}
+
+/* Inputs */
+form[action*="docs.google.com/forms"]:not(.citizenship-form) input[type="text"],
+form[action*="docs.google.com/forms"]:not(.citizenship-form) input[type="email"],
+form[action*="docs.google.com/forms"]:not(.citizenship-form) input[type="url"],
+form[action*="docs.google.com/forms"]:not(.citizenship-form) textarea {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  margin-bottom: 0.35rem;
+  font: inherit;
+  line-height: 1.35;
+  color: #222;
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Placeholder */
+form[action*="docs.google.com/forms"]:not(.citizenship-form) input::placeholder {
+  color: #777;
+}
+
+/* Focus */
+form[action*="docs.google.com/forms"]:not(.citizenship-form) input:focus,
+form[action*="docs.google.com/forms"]:not(.citizenship-form) textarea:focus {
+  outline: none;
+  border-color: #5ba5e0;
+  box-shadow: 0 0 0 3px rgba(91, 165, 224, 0.15);
+}
+
+/* Radio options */
+.diplomacy-radio-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 0.45rem 0;
+  font-weight: 400;
+}
+
+.diplomacy-radio-option input[type="radio"] {
+  margin-top: 0.2rem;
+  accent-color: #5ba5e0;
+}
+
+.diplomacy-radio-option span {
+  line-height: 1.35;
+}
+
+/* Submit button */
+form[action*="docs.google.com/forms"]:not(.citizenship-form) button[type="submit"] {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.1rem;
+  font: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #f5f5f5;
+  background: #4b5563;
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.05s ease, opacity 0.15s ease;
+}
+
+form[action*="docs.google.com/forms"]:not(.citizenship-form) button[type="submit"]:hover:not(:disabled) {
+  background: #5ba5e0;
+  border-color: #5ba5e0;
+}
+
+form[action*="docs.google.com/forms"]:not(.citizenship-form) button[type="submit"]:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+form[action*="docs.google.com/forms"]:not(.citizenship-form) button[type="submit"]:disabled {
+  opacity: 0.5;
+  background: #4b5563;
+  border-color: #4b5563;
+  color: #f5f5f5;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  form[action*="docs.google.com/forms"]:not(.citizenship-form) {
+    margin: 1.5rem 0;
+    padding: 1rem;
+  }
+
+  form[action*="docs.google.com/forms"]:not(.citizenship-form) button[type="submit"] {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* SUCCESS PARAGRAPHS */
+#diplomacy-success {
+  max-width: 760px;
+  margin: 2rem auto;
+  padding: 1.25rem 1.5rem;
+  background: #f5f5f5;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#diplomacy-success p {
+  margin: 0.5rem 0;
+}
+
+#diplomacy-success button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.1rem;
+  background: #4b5563;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#diplomacy-success button:hover {
+  background: #5ba5e0;
+}
+
+.diplomacy-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0.75rem 0 0.5rem 0;
+  font-weight: 400;
+}
+
+.diplomacy-checkbox input[type="checkbox"] {
+  margin-top: 0.2rem;
+  accent-color: #5ba5e0;
+}
+
+.diplomacy-checkbox span {
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+
+/* COLLAPSIBLE SECTION */
+/* -----------------------------------------------------------
+   Diplomacy form collapsible
+----------------------------------------------------------- */
+
+.diplomacy-collapsible {
+  max-width: 760px;
+  margin: 1.5rem auto;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.diplomacy-collapsible-summary {
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+/* Remove default arrow (optional) */
+.diplomacy-collapsible-summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom arrow */
+.diplomacy-collapsible-summary::after {
+  content: "▸";
+  float: right;
+  transition: transform 0.2s ease;
+}
+
+.diplomacy-collapsible[open] .diplomacy-collapsible-summary::after {
+  transform: rotate(90deg);
+}
+
+/* Content area */
+.diplomacy-collapsible-content {
+  padding: 0.75rem 1rem 1rem 1rem;
+  border-top: 1px solid #dfdfdf;
+}

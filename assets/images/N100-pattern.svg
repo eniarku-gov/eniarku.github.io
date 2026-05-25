@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300mm"
+   height="200mm"
+   viewBox="0 0 300 200"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f750, 2025-12-25)"
+   sodipodi:docname="N100-pattern.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#f2f2f2"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="false"
+     inkscape:zoom="0.36290165"
+     inkscape:cx="812.89242"
+     inkscape:cy="861.11485"
+     inkscape:window-width="1720"
+     inkscape:window-height="1306"
+     inkscape:window-x="1720"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="219.62014"
+       y="171.41084"
+       width="723.13949"
+       height="289.2558"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:120.633px;line-height:0;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:-16.3044px;writing-mode:lr-tb;direction:ltr;fill:#111111;stroke:#969696;stroke-width:0"
+       x="47.10149"
+       y="130.94067"
+       id="text2"
+       transform="scale(0.88825242,1.1258061)"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:-16.3044px;fill:#d4d4d4;fill-opacity:1;stroke-width:0"
+         x="47.10149"
+         y="130.94067">N100</tspan></text>
+  </g>
+</svg>

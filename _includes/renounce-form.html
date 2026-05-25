@@ -1,0 +1,529 @@
+<div class="citizenship-form-wrap">
+  <form id="citizenship-form" class="citizenship-form" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSf_kChzVLFLkFcham_WZXxoWM7CuwQfjRfIBdVZNRaJs5uW_Q/formResponse" novalidate>
+    <div class="citizenship-form-titlebox">
+      <div class="citizenship-form-title">DECLARATION OF RENUNCIATION OF CITIZENSHIP</div>
+    </div>
+
+    <div class="citizenship-notice" role="note" aria-live="polite">
+      <span class="citizenship-notice-icon" aria-hidden="true">⚠</span>
+      <span class="citizenship-notice-text">
+        This form does not save your progress. If you leave this page before clicking Submit, your declaration will not be submitted and you will need to reenter the information below. Review your responses carefully and be sure to submit only one declaration, as duplicate declarations will lead to delays in processing.
+      </span>
+    </div>
+
+    <div class="citizenship-validation-summary" role="alert" aria-live="assertive" hidden>
+      <strong>Please complete all required fields before submitting.</strong>
+      <ul></ul>
+    </div>
+
+    <!-- SECTION 1 -->
+    <section class="citizenship-section" data-section="1">
+      <h3 class="citizenship-section-heading">1. Eligibility Information</h3>
+      <div class="citizenship-section-box">
+        <div class="citizenship-question-label is-required">
+          Pursuant to <a href="{{ site.baseurl }}{{ '/acts/2026-as-8/sections/ecl-9-008/' }}" target="_blank" rel="noopener">ECL 9.008</a>, you may only renounce your Eniarkian citizenship if you satisfy all of the conditions below. Please review and confirm that you meet each of these requirements:
+        </div>
+
+        <div class="citizenship-fieldset vertical-options">
+          <label class="citizenship-checkline">
+            <input type="checkbox" name="entry.668674926" value="I am 18 years of age or older." required data-required-label="Eligibility confirmation">
+            <span>I am 18 years of age or older.</span>
+          </label>
+          <label class="citizenship-checkline">
+            <input type="checkbox" name="entry.668674926" value="I am not currently the subject of a pending or ongoing legal proceeding in Eniarku." required data-required-label="Eligibility confirmation">
+            <span>I am not currently the subject of a pending or ongoing legal proceeding in Eniarku.</span>
+          </label>
+          <label class="citizenship-checkline">
+            <input type="checkbox" name="entry.668674926" value="I am of sound mind and not subject to duress or external coercion." required data-required-label="Eligibility confirmation">
+            <span>I am of sound mind and not subject to duress or external coercion.</span>
+          </label>
+          <label class="citizenship-checkline">
+            <input type="checkbox" name="entry.668674926" value="I will not be rendered stateless by renouncing my Eniarkian citizenship." required data-required-label="Eligibility confirmation">
+            <span>I will not be rendered stateless by renouncing my Eniarkian citizenship.</span>
+          </label>
+          <label class="citizenship-checkline">
+            <input type="checkbox" name="entry.668674926" value="I no longer wish to remain an Eniarkian citizen." required data-required-label="Eligibility confirmation">
+            <span>I no longer wish to remain an Eniarkian citizen.</span>
+          </label>
+          <label class="citizenship-checkline">
+            <input type="checkbox" name="entry.668674926" value="I understand that, if my declaration is approved, I will no longer be entitled to the rights, obligations, and protections due to a member of the Eniarkian state." required data-required-label="Eligibility confirmation">
+            <span>I understand that, if my declaration is approved, I will no longer be entitled to the rights, obligations, and protections due to a member of the Eniarkian state.</span>
+          </label>
+          <label class="citizenship-checkline">
+            <input type="checkbox" name="entry.668674926" value="I understand that, if my declaration is approved, I will be ineligible to reapply for citizenship for a period of one year." required data-required-label="Eligibility confirmation">
+            <span>I understand that, if my declaration is approved, I will be ineligible to reapply for citizenship for a period of one year.</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="citizenship-section" data-section="2">
+      <h3 class="citizenship-section-heading">2. Biographical Information</h3>
+      <div class="citizenship-section-box">
+
+        <div class="citizenship-form-row name-row">
+          <div class="citizenship-field grow-2">
+            <label for="first-name" class="is-required">A. First Name</label>
+            <input id="first-name" name="entry.327261115" type="text" required>
+          </div>
+          <div class="citizenship-field grow-1">
+            <label for="middle-initial" class="is-required">B. Middle Initial</label>
+            <input id="middle-initial" name="entry.1324468827" type="text" required>
+          </div>
+          <div class="citizenship-field grow-2">
+            <label for="last-name" class="is-required">C. Last Name</label>
+            <input id="last-name" name="entry.1341719218" type="text" required>
+          </div>
+          <div class="citizenship-field suffix-field">
+            <label for="suffix" class="is-required">D. Suffix</label>
+            <input id="suffix" name="entry.2106928006" type="text" required>
+          </div>
+        </div>
+
+        <div class="citizenship-form-row three-col-row bio-birth-row">
+          <div class="citizenship-field bio-birth-gender">
+            <label for="gender" class="is-required">E1. Gender</label>
+            <select id="gender" name="entry.775313722" required>
+              <option value=""></option>
+              <option>MAN</option>
+              <option>WOMAN</option>
+              <option>TRANSGENDER</option>
+              <option>NON-BINARY</option>
+              <option>GENDERQUEER</option>
+              <option>GENDERFLUID</option>
+              <option>PREFER TO SELF-DESCRIBE</option>
+            </select>
+
+            <div class="citizenship-conditional-field" id="gender-self-describe-wrap" hidden>
+              <label for="gender-self-describe" class="is-required">E2. Self-Describe Gender</label>
+              <input id="gender-self-describe" name="entry.1732027504" type="text">
+            </div>
+          </div>
+
+          <div class="citizenship-field bio-birth-dob">
+            <label for="date-of-birth" class="is-required">F. Date of Birth</label>
+            <input id="date-of-birth" name="entry.2070240634" type="date" required>
+          </div>
+
+          <div class="citizenship-field bio-eid-number">
+            <label for="eid-number" class="is-required">G. EID Number</label>
+            <input id="eid-number" name="entry.441303567" type="text" required>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="citizenship-section" data-section="3">
+      <h3 class="citizenship-section-heading">3. Additional Declarant Information</h3>
+      <div class="citizenship-section-box">
+        <div class="citizenship-form-row">
+          <div class="citizenship-field full-width">
+            <label for="citizenship-status" class="is-required">A. Current Citizenship Status</label>
+            <select id="citizenship-status" name="entry.1602835374" required>
+              <option value=""></option>
+              <option>CITIZEN BY BIRTH</option>
+              <option>CITIZEN BY NATURALIZATION</option>
+              <option>CITIZEN BY OPTION</option>
+            </select>
+          </div>
+        </div>
+        <div class="citizenship-form-row">
+          <div class="citizenship-field full-width">
+            <label for="renunciation-reason">B. If you choose, describe the reason that you are renouncing your Eniarku citizenship.</label>
+            <textarea id="renunciation-reason" name="entry.1055038724" rows="4"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="citizenship-section" data-section="4">
+      <h3 class="citizenship-section-heading">4. Important Acknowledgements</h3>
+      <div class="citizenship-section-box">
+        <div class="citizenship-disclosure-box">
+          <ol>
+            <li>The information you provide in this declaration must be truthful and complete to the best of your knowledge.</li>
+            <li>Any false statement, material omission, or misleading or fraudulent submission will result in denial of your renunciation request.</li>
+            <li>Submission of this declaration does not guarantee approval.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="citizenship-section" data-section="5">
+      <h3 class="citizenship-section-heading">5. Contact Information</h3>
+      <div class="citizenship-section-box">
+        <div class="citizenship-form-row two-col-row">
+          <div class="citizenship-field">
+            <label for="email-address" class="is-required">A. Email Address</label>
+            <input id="email-address" name="entry.1087744430" type="email" required>
+          </div>
+          <div class="citizenship-field">
+            <label for="phone-or-discord">B. Discord or Preferred Alternate Contact</label>
+            <input id="phone-or-discord" name="entry.1913748187" type="text">
+          </div>
+        </div>
+
+        <div class="citizenship-form-row">
+          <div class="citizenship-field full-width">
+            <label for="contact-notes">C. Additional Contact Notes</label>
+            <input id="contact-notes" name="entry.1360248773" type="text">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section class="citizenship-section" data-section="6">
+      <h3 class="citizenship-section-heading">6. Attestation and Signature</h3>
+      <div class="citizenship-section-box">
+        <div class="citizenship-attestation-text">
+          I attest that I satisfy all of the eligibility requirements in Section 1 and that the statements made in this declaration are true, complete, and made in good faith. I understand that additional review may be required and that my declaration will be denied if it is found to violate <a href="{{ site.baseurl }}{{ '/acts/2026-as-8/sections/ecl-9-008/' }}" target="_blank" rel="noopener">ECL 9.008</a> or any other applicable law.
+        </div>
+
+        <div class="citizenship-form-row two-col-row signature-row">
+          <div class="citizenship-field">
+            <label for="signature-name" class="is-required">A. Type Full Name as Signature</label>
+            <input id="signature-name" name="entry.876644297" type="text" required>
+          </div>
+          <div class="citizenship-field signature-date-field">
+            <label for="signature-date" class="is-required">B. Date</label>
+            <input id="signature-date" name="entry.1398416232" type="date" required>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="citizenship-form-actions">
+      <button type="submit" class="citizenship-submit-button">Submit Declaration</button>
+    </div>
+  </form>
+
+  <div id="citizenship-success" class="citizenship-success" style="display:none;">
+    <p><strong>Thank you for submitting your declaration of renunciation of citizenship.</strong></p>
+    <p>Your declaration has been submitted and will be reviewed in accordance with Eniarkian law and any applicable procedures. You may receive correspondence from gov.eniarku@gmail.com requesting additional information regarding your declaration. You may safely exit this form or close this tab.</p>
+
+    <button id="citizenship-exit-btn" type="button">
+      Exit
+    </button>
+  </div>
+</div>
+
+<script>
+  var formDirty = false;
+</script>
+
+<!--Toggle field 2.E2 (gender self-describe) and required-field validation-->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.querySelector('.citizenship-form');
+  var success = document.getElementById('citizenship-success');
+  var exitBtn = document.getElementById('citizenship-exit-btn');
+  var submitButton = form ? form.querySelector('button[type="submit"]') : null;
+  var validationSummary = document.querySelector('.citizenship-validation-summary');
+  var validationList = validationSummary ? validationSummary.querySelector('ul') : null;
+  var genderSelect = document.getElementById('gender');
+  var genderWrap = document.getElementById('gender-self-describe-wrap');
+  var genderInput = document.getElementById('gender-self-describe');
+
+  function setFieldState(container, show) {
+    if (!container) {
+      return;
+    }
+
+    container.hidden = !show;
+
+    var fields = container.querySelectorAll('input, select, textarea');
+
+    fields.forEach(function (field) {
+      field.disabled = !show;
+
+      if (field.hasAttribute('data-required-when-visible')) {
+        field.required = !!show;
+      }
+
+      if (show) {
+        return;
+      }
+
+      if (field.hasAttribute('data-required-when-visible')) {
+        field.required = false;
+      }
+
+      if (field.tagName === 'SELECT') {
+        field.selectedIndex = 0;
+      } else if (field.type === 'checkbox' || field.type === 'radio') {
+        field.checked = false;
+      } else {
+        field.value = '';
+      }
+    });
+  }
+
+  function toggleGenderSelfDescribe() {
+    var show = genderSelect && genderSelect.value === 'Prefer to self-describe';
+
+    setFieldState(genderWrap, !!show);
+
+    if (genderInput) {
+      genderInput.required = !!show;
+    }
+  }
+
+  function textLabel(element) {
+    return element ? element.textContent.replace('*', '').trim() : '';
+  }
+
+  function formatSectionFieldLabel(labelText, field) {
+    var section = field ? field.closest('.citizenship-section') : null;
+    var sectionNumber = section ? section.getAttribute('data-section') : '';
+
+    if (!labelText || !sectionNumber) {
+      return labelText;
+    }
+
+    return labelText.replace(/^([A-Z]\d?\.)\s*/, sectionNumber + '-$1 ');
+  }
+
+  function getFieldLabel(field) {
+    var label = null;
+    var labelText = '';
+
+    if (field && field.id) {
+      label = document.querySelector('label[for="' + field.id + '"]');
+    }
+
+    if (!label && field) {
+      label = field.closest('label');
+    }
+
+    labelText = textLabel(label) || (field ? field.getAttribute('data-required-label') : '') || 'Required field';
+
+    return formatSectionFieldLabel(labelText, field);
+  }
+
+  function markInvalid(field, invalid) {
+    var container = field.closest('.citizenship-field, .citizenship-yn-item, .citizenship-fieldset, .citizenship-checkline');
+
+    field.classList.toggle('citizenship-invalid-control', invalid);
+
+    if (container) {
+      container.classList.toggle('citizenship-invalid-group', invalid);
+    }
+  }
+
+  function clearValidationState() {
+    var invalidControls = form ? form.querySelectorAll('.citizenship-invalid-control') : [];
+    var invalidGroups = form ? form.querySelectorAll('.citizenship-invalid-group') : [];
+
+    invalidControls.forEach(function (field) {
+      field.classList.remove('citizenship-invalid-control');
+    });
+
+    invalidGroups.forEach(function (group) {
+      group.classList.remove('citizenship-invalid-group');
+    });
+
+    if (validationSummary) {
+      validationSummary.hidden = true;
+    }
+
+    if (validationList) {
+      validationList.innerHTML = '';
+    }
+  }
+
+  function validateRequiredFields() {
+    var errors = [];
+    var firstInvalid = null;
+    var radioGroupsChecked = {};
+    var requiredFields = form.querySelectorAll('input[required], select[required], textarea[required]');
+
+    clearValidationState();
+
+    requiredFields.forEach(function (field) {
+      if (field.disabled || field.hidden || field.closest('[hidden]')) {
+        return;
+      }
+
+      var invalid = false;
+      var message = '';
+
+      if (field.type === 'radio') {
+        if (radioGroupsChecked[field.name]) {
+          return;
+        }
+
+        radioGroupsChecked[field.name] = true;
+        var checkedRadio = form.querySelector('input[type="radio"][name="' + field.name + '"]:checked');
+
+        if (!checkedRadio) {
+          invalid = true;
+          message = getFieldLabel(field);
+
+          var groupRadios = form.querySelectorAll('input[type="radio"][name="' + field.name + '"]');
+          groupRadios.forEach(function (radio) {
+            markInvalid(radio, true);
+          });
+        }
+      } else if (field.type === 'checkbox') {
+        invalid = !field.checked;
+        message = getFieldLabel(field);
+      } else {
+        invalid = !field.value || !field.value.trim();
+        message = getFieldLabel(field);
+      }
+
+      if (!invalid && !field.checkValidity()) {
+        invalid = true;
+        message = getFieldLabel(field);
+      }
+
+      if (invalid) {
+        if (!firstInvalid) {
+          firstInvalid = field;
+        }
+
+        markInvalid(field, true);
+
+        if (errors.indexOf(message) === -1) {
+          errors.push(message);
+        }
+      }
+    });
+
+    return {
+      isValid: errors.length === 0,
+      errors: errors,
+      firstInvalid: firstInvalid
+    };
+  }
+
+  function showValidationErrors(errors) {
+    if (!validationSummary || !validationList) {
+      return;
+    }
+
+    validationList.innerHTML = '';
+
+    errors.forEach(function (error) {
+      var item = document.createElement('li');
+      item.textContent = error;
+      validationList.appendChild(item);
+    });
+
+    validationSummary.hidden = false;
+  }
+
+  function enforceUppercaseSection2() {
+    var section2 = document.querySelector('.citizenship-section[data-section="2"]');
+    if (!section2) {
+      return;
+    }
+
+    var fields = section2.querySelectorAll('input[type="text"], textarea');
+    fields.forEach(function (field) {
+      field.value = field.value.toUpperCase();
+    });
+  }
+
+  if (genderSelect) {
+    genderSelect.addEventListener('change', toggleGenderSelfDescribe);
+    toggleGenderSelfDescribe();
+  }
+
+  if (form) {
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      enforceUppercaseSection2();
+      var validation = validateRequiredFields();
+
+      if (!validation.isValid) {
+        showValidationErrors(validation.errors);
+
+        if (validationSummary) {
+          validationSummary.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        if (validation.firstInvalid) {
+          validation.firstInvalid.focus({ preventScroll: true });
+        }
+
+        return;
+      }
+
+      var formData = new FormData(form);
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
+      }
+
+      fetch(form.action, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      })
+        .then(function () {
+          formDirty = false;
+          form.style.display = 'none';
+
+          if (success) {
+            success.style.display = 'block';
+
+            window.scrollTo({
+              top: success.offsetTop - 40,
+              behavior: 'smooth'
+            });
+          }
+        })
+        .catch(function () {
+          alert('There was an issue submitting the declaration. Please try again.');
+
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Submit Declaration';
+          }
+        });
+    });
+
+    if (exitBtn) {
+      exitBtn.addEventListener('click', function () {
+        window.close();
+
+        /*
+          Most browsers only allow scripts to close tabs/windows that were opened
+          by script. If the browser blocks window.close(), this fallback navigates
+          the user away from the submitted form.
+        */
+        setTimeout(function () {
+          if (!window.closed) {
+            window.location.href = '{{ site.baseurl }}/';
+          }
+        }, 150);
+      });
+    }
+  }
+});
+</script>
+
+<!--Confirmation message when exiting tab (if form has been modified)-->
+<script>
+  document.querySelector('.citizenship-form').addEventListener('input', function () {
+    formDirty = true;
+  });
+
+  window.addEventListener('beforeunload', function (e) {
+    if (formDirty) {
+      e.preventDefault();
+      e.returnValue = '';
+    }
+  });
+</script>

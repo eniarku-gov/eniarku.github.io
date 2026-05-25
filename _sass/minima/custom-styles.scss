@@ -1,2 +1,234 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+table.narrow-table {
+  width: 30%;
+  border-collapse: separate;
+  border: 1px solid $border-color-01;
+  //border-spacing: 1.5rem 0;
+  //margin-left: -1.5rem; // cancels the left-side border-spacing bleed
+
+  th, td {
+    border: none;
+    //border-bottom: 1px solid $border-color-01;
+    //background-color: transparent; // removes banded row styling
+  }
+
+  thead th {
+    border-bottom: 2px solid $border-color-01;
+  }
+}
+
+
+.page-heading {
+  font-weight: 400;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+
+//h2:not(.section-page-heading):not(.chapter-page-heading):not(.full-act-chapter-heading) {
+h2:not([class]) {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  //margin: 1rem auto 0.5rem auto;
+  border-bottom: 4px solid $border-color-02;
+}
+
+p + h2 {
+  margin-top: 1.75rem;
+}
+
+
+
+
+/* --------------------------------------------------
+SINGLE-IMAGE FRAME
+-------------------------------------------------- */
+
+figure.figure-float {
+  display: inline-block;
+  //margin: 0.5rem;
+  padding: 3px;
+  border: 1px solid #ccc;
+  background: #fff;
+  max-width: 500px;
+}
+
+figure.figure-float.right {
+  float: right;
+  margin-left: 1.25rem;
+}
+
+figure.figure-float.left {
+  float: left;
+  margin-right: 1.25rem;
+}
+
+figure.figure-float img {
+  display: block;
+  width: 100%;
+  //border: 1px solid #ccc;
+}
+
+figure.figure-float figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  margin-top: 4px;
+  //border-top: 1px solid #ccc;
+  padding: 0 4px;
+}
+
+/* Clear floats after sections that contain them */
+.content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* --------------------------------------------------
+TWO-IMAGE FRAME
+-------------------------------------------------- */
+figure.figure-gallery {
+  display: inline-block;
+  padding: 3px;
+  border: 1px solid #ccc;
+  background: #fff;
+  max-width: 100%;
+}
+figure.figure-gallery.right {
+  float: right;
+  margin-left: 1.25rem;
+}
+figure.figure-gallery.left {
+  float: left;
+  margin-right: 1.25rem;
+}
+figure.figure-gallery .figure-gallery-images {
+  display: flex;
+  gap: 3px;
+}
+figure.figure-gallery .figure-gallery-images img {
+  display: block;
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+}
+figure.figure-gallery figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  margin-top: 4px;
+  padding: 0 4px;
+}
+
+
+
+
+/* -----------------------------------------------------------
+   Generic collapsible sections
+   Reusable across site pages within Minima
+----------------------------------------------------------- */
+
+.collapsible {
+  max-width: $content-width;
+  margin: 1.5rem auto;
+  background: #f5f5f5;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.collapsible + .collapsible {
+  margin-top: 1rem;
+}
+
+.collapsible summary {
+  display: block;
+  position: relative;
+  padding: 0.9rem 1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #222;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.collapsible summary:hover {
+  background: #ececec;
+}
+
+.collapsible summary:focus {
+  outline: none;
+}
+
+.collapsible summary:focus-visible {
+  box-shadow: inset 0 0 0 3px rgba(91, 165, 224, 0.15);
+}
+
+.collapsible summary::-webkit-details-marker {
+  display: none;
+}
+
+.collapsible summary::after {
+  content: "▸";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4b5563;
+  transition: transform 0.15s ease;
+}
+
+.collapsible[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.collapsible-content {
+  padding: 0 2.5rem 1rem 1rem;
+  border-top: 1px solid #dfdfdf;
+  background: #fdfdfd;
+}
+
+.collapsible-content > :first-child {
+  margin-top: 0.85rem;
+}
+
+.collapsible-content > :last-child {
+  margin-bottom: 0;
+}
+
+.collapsible-content p,
+.collapsible-content ul,
+.collapsible-content ol {
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .collapsible {
+    margin: 1rem 0;
+  }
+
+  .collapsible summary,
+  .collapsible-content {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+}
+
+
+
+/* --------------------------------------------------
+POSTS
+-------------------------------------------------- */
+.post-list .post-link {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}

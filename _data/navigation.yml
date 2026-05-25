@@ -1,0 +1,44 @@
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+  subpages:
+    - title: History
+      url: /history/
+    - title: Structure
+      url: /structure/
+    - title: National Symbols
+      url: /symbols/
+
+- title: Government
+  url: /government/
+  subpages:
+    - title: The Crown
+      url: /crown/
+    - title: Council of State
+      url: /council/
+
+- title: Laws
+  url: /laws/
+  subpages:
+    - title: The Constitution
+      url: /constitution/
+    - title: Eniarku Compiled Laws
+      url: /titles/
+    - title: Resolutions
+      url: /resolutions/
+
+- title: Citizenship
+  url: /citizenship/
+
+- title: News
+  url: /news/
+
+- title: Contact
+  url: /contact/
+  subpages:
+    - title: General
+      url: /contact/
+    - title: Diplomacy
+      url: /diplomacy/
